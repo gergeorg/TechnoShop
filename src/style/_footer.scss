@@ -8,6 +8,7 @@
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		gap: 30px;
+		margin-bottom: 50px;
 	}
 
 	&__column-double {
@@ -59,5 +60,17 @@
 		}
 	}
 
+	&__bottom {
+		@extend %search-font;
+		@extend %flex-center;
+		justify-content: space-between;
+		color: $white;
+
+		&-item {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
 
 }
