@@ -1,0 +1,28 @@
+.nav {
+	@extend %flex-center;
+
+	&__phone {
+		@extend %flex-center;
+		margin-right: 105px;
+		@extend %phone-font;
+		color: $defaultColor;
+		transition: color .3s ease-in-out;
+
+		&:hover {
+			color: $hoverColor;
+		}
+
+		svg {
+			margin-right: 5px;
+		}
+	}
+
+	&__cart {
+		color: $defaultColor;
+		transition: color .3s ease-in-out;
+
+		&:hover {
+			color: $hoverColor;
+		}
+	}
+}

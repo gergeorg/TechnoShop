@@ -1,0 +1,63 @@
+.footer {
+	flex: 0 0 auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: $defaultColor;
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 30px;
+	}
+
+	&__column-double {
+		grid-column:  2 span;
+	}
+
+	&__list {
+		&-double {
+			column-count: 2;
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		color: $white;
+		@extend %footer-title-font;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__link {
+		color: $white;
+		@extend %footer-link-font;
+		transition: color .3s ease-in-out;
+
+		&:hover {
+			color: $hoverColor;
+		}
+	}
+
+	&__contacts {
+		color: $white;
+		margin-bottom: 36px;
+
+		&-link {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 130%;
+			color: $white;
+			transition: color .3s ease-in-out;
+
+			&:hover {
+				color: $hoverColor;
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,25 @@
+	.search {
+		@extend %flex-center;
+		justify-content: space-between;
+		padding: 13px 26px;
+		width: 818px;
+		background: $white;
+		border: 1px solid #cdcdcd;
+		border-radius: $borderRadius;
+
+		&__input {
+			width: 100%;
+			@extend %search-font;
+			color: $defaultColor;
+			outline: none;
+		}
+
+		&__btn {
+			color: $defaultColor;
+			transition: color .3s ease-in-out;
+
+			&:hover {
+				color: $hoverColor;
+			}
+		}
+	}

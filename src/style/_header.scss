@@ -1,0 +1,14 @@
+.header {
+	&__container {
+		@extend %flex-center;
+		justify-content: space-between;
+		padding-top: 26px;
+	}
+
+	&__logo {
+		width: 101px;
+		height: 50px;
+	}
+
+
+}
